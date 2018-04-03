@@ -1,5 +1,5 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" class="page"
-  xmlns:ui="nativescript-progress-notification">
+  xmlns:ui="nativescript-progress-notifications">
   <StackLayout class="p-20">
     <Button text="Show Local Notification" tap="{{ local }}" />
     <Button text="Show Progress Notification" tap="{{ progress }}" />

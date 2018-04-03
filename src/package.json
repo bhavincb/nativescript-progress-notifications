@@ -1,8 +1,8 @@
 {
-    "name": "nativescript-progress-notification",
+    "name": "nativescript-progress-notifications",
     "version": "1.0.0",
-    "description": "Your awesome NativeScript plugin.",
-    "main": "progress-notification",
+    "description": "The Progress Notifications plugin allows your app to show normal and progress notifications during Android app execution. For example notification of file downloading or uploading.",
+    "main": "progress-notifications",
     "typings": "index.d.ts",
     "nativescript": {
         "platforms": {
@@ -17,31 +17,34 @@
         "test.android": "npm i && npm run tsc && npm run tslint && cd ../demo && tns build android && tns test android --justlaunch",
         "test.ios": "npm i && npm run tsc && npm run tslint && cd ../demo && tns build ios && tns test ios --justlaunch",
         "tslint": "cd .. && tslint \"**/*.ts\" --config tslint.json --exclude \"**/node_modules/**\"",
-        "plugin.link": "npm link && cd ../demo && npm link nativescript-progress-notification && cd ../src",
+        "plugin.link": "npm link && cd ../demo && npm link nativescript-progress-notifications && cd ../src",
         "plugin.tscwatch": "npm run tsc -- -w",
         "demo.ios": "npm i && npm run tsc && cd ../demo && tns run ios --syncAllFiles",
         "demo.android": "npm i && npm run tsc && cd ../demo && tns run android --syncAllFiles",
         "demo.reset": "cd ../demo && rimraf platforms",
-        "plugin.prepare": "npm run tsc && cd ../demo && tns plugin remove nativescript-progress-notification && tns plugin add ../src",
+        "plugin.prepare": "npm run tsc && cd ../demo && tns plugin remove nativescript-progress-notifications && tns plugin add ../src",
         "clean": "cd ../demo && rimraf hooks node_modules platforms && cd ../src && rimraf node_modules && npm run plugin.link",
         "ci.tslint": "npm i && tslint '**/*.ts' --config '../tslint.json' --exclude '**/node_modules/**'",
         "prepare": "node scripts/prepare.js"
     },
     "keywords": [
+        "ecosystem:NativeScript",
         "NativeScript",
         "JavaScript",
-        "Android",
-        "iOS"
+        "Notification",
+        "Local Notification",
+        "Progress Notification",
+        "Android"
     ],
     "author": {
-        "name": "Your Name",
-        "email": "youremail@yourdomain.com"
+        "name": "Bhavin Jaloadara",
+        "email": "bhavin.jalodara@gmail.com"
     },
     "bugs": {
-        "url": "https://github.com/bhavincb/nativescript-progress-notification/issues"
+        "url": "https://github.com/bhavincb/nativescript-progress-notifications/issues"
     },
     "license": "Apache-2.0",
-    "homepage": "https://github.com/bhavincb/nativescript-progress-notification",
+    "homepage": "https://github.com/bhavincb/nativescript-progress-notifications",
     "readmeFilename": "README.md",
     "devDependencies": {
         "tns-core-modules": "^3.1.0",

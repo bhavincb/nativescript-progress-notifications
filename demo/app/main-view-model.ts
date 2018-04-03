@@ -1,5 +1,5 @@
 import { Observable } from 'tns-core-modules/data/observable';
-import * as ProgressNotification from 'nativescript-progress-notification';
+import * as ProgressNotification from 'nativescript-progress-notifications';
 
 export class HelloWorldModel extends Observable {
   public notifications= [];
