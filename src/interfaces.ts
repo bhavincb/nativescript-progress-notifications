@@ -1,7 +1,3 @@
-import { ProgressOptions, CommonNotification, UpdateOptions } from './interfaces';
-export declare function show(_options: ProgressOptions): CommonNotification;
-export declare function update(notification: CommonNotification, options: UpdateOptions): CommonNotification;
-export declare function dismiss(id: number): void;
 export interface ProgressOptions{
   id: number,
   title?: string,

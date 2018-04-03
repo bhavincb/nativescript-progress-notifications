@@ -1,6 +1,10 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" class="page"
   xmlns:ui="nativescript-progress-notification">
   <StackLayout class="p-20">
-    <Label text="{{ message }}" class="t-20 text-center c-black" textWrap="true"/>
+    <Button text="Show Local Notification" tap="{{ local }}" />
+    <Button text="Show Progress Notification" tap="{{ progress }}" />
+    <Button text="update Progress Notification" tap="{{ update }}" />
+    <Button text="Finish All" tap="{{ finish }}" />
+    <Button text="Dissmiss All" tap="{{ dissmiss }}" />
   </StackLayout>
 </Page>
