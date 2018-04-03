@@ -72,8 +72,8 @@ Describe your plugin methods and properties here. See [nativescript-feedback](ht
 | Property | Default | Description |
 | --- | --- | --- |
 |`id`     |required |A number so you can easily distinguish your notifications. |
-|`title` | empty(" ") |The title which is shown in the statusbar.|
-|`message`| empty(" ")  |The text below the title. |
+|`title` | " " |The title which is shown in the statusbar.|
+|`message`| " "  |The text below the title. |
 |`ongoing`| true  | Set whether this is an `ongoing` notification. Ongoing notifications cannot be dismissed by the user, so your application must take care of canceling them. |
 |`indeterminate`| false  | ongoing notification type `indeterminate` or not. setting `true` will show continous running progressbar irrelative to Proress value.  |
 |`progressValue`| 0 | set the notification progress when `ongoing` is true and `indeterminate` is false. |
